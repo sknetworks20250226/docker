@@ -58,3 +58,9 @@ items/urls.py   라우팅 정보
 config/settings.py 'items' 앱 추가,  TEMPLATES 폴더 설정
 config/templages/items/ 폴더에 HTML파일 작성
 ```
+# 8. 마이그레이션 및 서버 실행
+```
+docker-compose run web python manage.py makemigrations
+docker-compose run web python manage.py migrate
+docker-compose up
+```
