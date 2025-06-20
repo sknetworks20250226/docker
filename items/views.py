@@ -8,7 +8,7 @@ class ItemListView(ListView):
     model = Item
     template_name = 'items/item_list.html'
     context_object_name = 'items'
-class ItemCreateViewe(CreateView):
+class ItemCreateView(CreateView):
     model = Item
     fields = ['name','description']
     template_name = 'items/item_form.html'
