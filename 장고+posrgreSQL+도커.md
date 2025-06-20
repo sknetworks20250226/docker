@@ -11,7 +11,7 @@ DOCKER
 docker-compose run web django-admin startproject config .
 ```
 # 3. Django 데이터베이스 설정 변경
-``
+```
 import os
 DATABASES = {
     'default': {
@@ -30,4 +30,9 @@ docker compose up --build
 
 # 다른터미널에서 마이그래션을 적용
 docker-compose run web python manage.py migrate
+```
+
+# 5 앱 생성 및 모델 작성
+```
+docker-compose run web python manage.py startapp items
 ```
