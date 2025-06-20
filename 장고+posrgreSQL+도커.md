@@ -1,6 +1,8 @@
-# 1. 장고 프로젝트 생성
+# 1. 프로젝트 구조 설계
 ```
-django-admin startproject dpd
-django-admin start app
+DOCKER
+|- Dockerfile
+|- docker-compose.yml
+|- requirements.txt
+|- 장고 프로젝트 폴더
 ```
-# 2. DB 셋팅
