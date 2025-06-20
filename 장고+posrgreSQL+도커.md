@@ -24,3 +24,10 @@ DATABASES = {
     }
 }
 ```
+# 4. 마이그레이션 및 서버 실행
+```
+docker compose up --build
+
+# 다른터미널에서 마이그래션을 적용
+docker-compose run web python manage.py migrate
+```
