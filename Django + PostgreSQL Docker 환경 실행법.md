@@ -12,6 +12,8 @@ git clone https://github.com/sknetworks20250226/docker.git .
 # 2. 컨테이너 빌드 및 실행
 docker-compose up --build
 
+# DB가 완전히 뜬 후에 실행(2번실행)
+docker-compose up --build
 # 3. (최초 1회) 마이그레이션
 docker-compose run web python manage.py migrate
 
