@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>item create</title>
+    <title>delete</title>
 </head>
 <body>
-    <h1>{% if object %}Edit{% else %}Add{% endif %} Item</h1>
+    <p>삭제하시겠습니까?</p>
     <form method="post">
         {% csrf_token %}
-        {{form.as_p}}
-        <button type="submit">Save</button>
+        <button type="submit">delete</button>
     </form>
-    <a href="{% url 'item-list' %}">item list</a>
 </body>
+<a href="{% url 'item-list' %}">Cancel</a>
 </html>
