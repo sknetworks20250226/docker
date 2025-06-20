@@ -35,4 +35,18 @@ docker-compose run web python manage.py migrate
 # 5 앱 생성 및 모델 작성
 ```
 docker-compose run web python manage.py startapp items
+
+class Item(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.TextField(blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self) -> str:
+        return self.name
+```
+# 6. 마이그레이션 및 superuser 생성
+```
+docker-compose run web python manage.py makemigrations
+docker-compose run web python manage.py migrate
+docker-compose run web python manage.py createsuperuser
 ```
