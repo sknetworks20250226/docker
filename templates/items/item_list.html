@@ -12,7 +12,7 @@
         {% for item in items %}
         <li>{{item.name}} - {{item.description}}</li>
         <a href="{% url 'item-edit' item.pk %}">Edit</a>
-        <a href="{% url 'item-delete item.pk' %}">Delete</a>
+        <a href="{% url 'item-delete' item.pk %}">Delete</a>
         {% empty %}
         <li>no item......</li>
         {% endfor %}
