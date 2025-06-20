@@ -6,3 +6,7 @@ DOCKER
 |- requirements.txt
 |- 장고 프로젝트 폴더
 ```
+# 2. Django 프로젝트 생성
+```
+docker-compose run web django-admin startproject config .
+```
