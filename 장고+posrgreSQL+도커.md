@@ -53,6 +53,7 @@ docker-compose run web python manage.py createsuperuser
 # 7. CRUD views, urls, templates 작성
 ```
 items/views.py   클래스뷰
+config/urls.py  item의 urls을 참고하도록 include
 items/urls.py   라우팅 정보
 config/settings.py 'items' 앱 추가,  TEMPLATES 폴더 설정
 config/templages/items/ 폴더에 HTML파일 작성
