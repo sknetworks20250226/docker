@@ -13,9 +13,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
   web:
     image: sknetworks/my-django-app:latest
-    command: python manage.py runserver 0.0.0.0:8000
-    volumes:
-      - .:/app
+    command: python manage.py runserver 0.0.0.0:8000    
     ports:
       - "8000:8000"
     depends_on:
